@@ -20,7 +20,7 @@ export const Spelregels = () => {
                     De jongste speler begint.
                 </li>
                 <li>
-                    De spelers drukken om de beurt met de klok mee op de knop "Ronde 1" en voeren de opdracht uit.
+                    De spelers drukken om de beurt met de klok mee op de knop &quot;"Ronde 1&quot;" en voeren de opdracht uit.
                 </li>
                 <li>
                     De ronde is afgelopen als alle cadeaus zijn verdeeld over de spelers.
@@ -41,7 +41,7 @@ export const Spelregels = () => {
                     De speler die het dichtste bij 5 december jarig is begint.
                 </li>
                 <li>
-                    De spelers drukken om de beurt met de klok mee op de knop "Ronde 2" en voeren de opdracht uit.
+                    De spelers drukken om de beurt met de klok mee op de knop &quot;"Ronde 2&quot;" en voeren de opdracht uit.
                 </li>
                 <li>
                     De ronde eindigt wanneer de timer afloopt of wanneer alle cadeautjes zijn uitgepakt.
@@ -59,7 +59,7 @@ export const Spelregels = () => {
                     De speler die als laatste bij de Letsconnect is komen werken begint.
                 </li>
                 <li>
-                    De spelers drukken om de beurt met de klok mee op de knop "Ronde 3" en voeren de opdracht uit
+                    De spelers drukken om de beurt met de klok mee op de knop &quot;"Ronde 3&quot;" en voeren de opdracht uit
                 </li>
                 <li>
                     Als een cadeau geclaimed is doet deze niet meer mee voor het spel.
