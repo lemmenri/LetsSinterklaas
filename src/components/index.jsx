@@ -1,6 +1,10 @@
 // pages/index.js
 import { useState } from 'react';
 import { Spelregels } from '../components/spelregels'
+import { Timer } from '../components/timer'
+import { Ronde1 } from '../components/ronde1'
+import { Ronde2 } from '../components/ronde2'
+import { Ronde3 } from '../components/ronde3'
 
 const IndexPage = () => {
   const [showModal, setShowModal] = useState(null);
@@ -36,7 +40,7 @@ const IndexPage = () => {
         {buttons.map((button) => (
           <button
             key={button.id}
-            className={`button ${button.position}`}
+            className={`button ${button.position} rounded-lg`}
             onClick={() => handleButtonClick(button.id)}
           >
             {button.label}
@@ -52,9 +56,27 @@ const IndexPage = () => {
                   <button className='bg-green-800 text-white mt-4 px-6 py-2 rounded-2xl w-full' onClick={handleCloseModal}>Close</button>
                 </>
               )}
-              {showModal != 1 && (
+              {showModal === 2 && (
                 <>
-                  <p>{content.find(item => item.id === showModal).content}</p>
+                  <Timer />
+                  <button className='bg-green-800 text-white mt-4 px-6 py-2 rounded-2xl w-full' onClick={handleCloseModal}>Close</button>
+                </>
+              )}
+              {showModal === 3 && (
+                <>
+                  <Ronde1 />
+                  <button className='bg-green-800 text-white mt-4 px-6 py-2 rounded-2xl w-full' onClick={handleCloseModal}>Close</button>
+                </>
+              )}
+              {showModal === 4 && (
+                <>
+                  <Ronde2 />
+                  <button className='bg-green-800 text-white mt-4 px-6 py-2 rounded-2xl w-full' onClick={handleCloseModal}>Close</button>
+                </>
+              )}
+              {showModal === 5 && (
+                <>
+                  <Ronde3 />
                   <button className='bg-green-800 text-white mt-4 px-6 py-2 rounded-2xl w-full' onClick={handleCloseModal}>Close</button>
                 </>
               )}
