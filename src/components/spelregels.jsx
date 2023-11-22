@@ -6,7 +6,7 @@ export const Spelregels = () => {
             <h1 className='font-bold text-2xl'>
                 SPELREGELS
             </h1>
-            <p>Welkom bij het grote Letsconnect Sinterklaas spel! Verzamel je gezelligste collega's, neem allemaal wat cadeautjes mee, vraag of Wilbert nog wat snacks klaarzet en... lees deze spelregels om te weten wat je moet doen!</p>
+            <p>Welkom bij het grote Letsconnect Sinterklaas spel! Verzamel je gezelligste collega&apos;s, neem allemaal wat cadeautjes mee, vraag of Wilbert nog wat snacks klaarzet en... lees deze spelregels om te weten wat je moet doen!</p>
             <h2 className='font-semibold'>
                 Ronde 1: De SinterShuffle
             </h2>
