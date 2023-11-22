@@ -64,7 +64,7 @@ const IndexPage = () => {
         .button {
           color: white;
           width: 100%;
-          padding: 15px;
+          padding: 30px 15px;
           font-size: 16px;
           background-color: rgb(22, 101, 52);
         }

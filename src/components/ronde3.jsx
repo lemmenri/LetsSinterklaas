@@ -11,7 +11,7 @@ export const Ronde3 = () => {
         'Ruil een cadeau met de speler die het verste van je weg staat.',
         'Ruil het grootste cadeau met het kleinste.',
         'Wissel 2 spelers van plek. Laat hun ongeclaimde cadeautjes liggen.',
-        'Wie het laatste naar het toilet ging, geeft je een cadeau.',
+        'Wie het laatste naar het toilet ging, geeft aan jou een cadeau.',
         'Alle cadeaus schuiven naar links.',
         'Geef een cadeau aan de laatste die een selfie maakte.',
         'Ruil alle cadeaus van twee spelers met elkaar.',
