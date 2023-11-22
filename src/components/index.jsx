@@ -17,14 +17,6 @@ const IndexPage = () => {
     { id: 5, label: 'Ronde 3: De SinterSwap Finale ', position: 'bottom-right' },
   ];
 
-  const content = [
-    { id: 1, content: 'spelregels' },
-    { id: 2, content: 'Tekst 2' },
-    { id: 3, content: 'Tekst 3' },
-    { id: 4, content: 'Tekst 4' },
-    { id: 5, content: 'Tekst 5' },
-  ];
-
   const handleButtonClick = (id) => {
     setShowModal(id);
   };
@@ -50,36 +42,14 @@ const IndexPage = () => {
         {showModal && (
           <div className="modal p-3">
             <div className="modal-content max-h-full overflow-auto">
-              {showModal === 1 && (
-                <>
-                  <Spelregels />
-                  <button className='bg-green-800 text-white mt-4 px-6 py-2 rounded-2xl w-full' onClick={handleCloseModal}>Close</button>
-                </>
-              )}
-              {showModal === 2 && (
-                <>
-                  <Timer />
-                  <button className='bg-green-800 text-white mt-4 px-6 py-2 rounded-2xl w-full' onClick={handleCloseModal}>Close</button>
-                </>
-              )}
-              {showModal === 3 && (
-                <>
-                  <Ronde1 />
-                  <button className='bg-green-800 text-white mt-4 px-6 py-2 rounded-2xl w-full' onClick={handleCloseModal}>Close</button>
-                </>
-              )}
-              {showModal === 4 && (
-                <>
-                  <Ronde2 />
-                  <button className='bg-green-800 text-white mt-4 px-6 py-2 rounded-2xl w-full' onClick={handleCloseModal}>Close</button>
-                </>
-              )}
-              {showModal === 5 && (
-                <>
-                  <Ronde3 />
-                  <button className='bg-green-800 text-white mt-4 px-6 py-2 rounded-2xl w-full' onClick={handleCloseModal}>Close</button>
-                </>
-              )}
+              <>
+                {showModal === 1 && (<Spelregels />)}
+                {showModal === 2 && (<Timer />)}
+                {showModal === 3 && (<Ronde1 />)}
+                {showModal === 4 && (<Ronde2 />)}
+                {showModal === 5 && (<Ronde3 />)}
+                <button className='bg-green-800 text-white mt-4 px-6 py-2 rounded-2xl w-full' onClick={handleCloseModal}>Close</button>
+              </>
             </div>
           </div>
         )}
@@ -101,16 +71,6 @@ const IndexPage = () => {
 
         .top {
           grid-column: span 2;
-        }
-        
-        .bottom-left {
-          grid-column: span 1;
-          grid-row: span 1;
-        }
-        
-        .bottom-right {
-          grid-column: span 1;
-          grid-row: span 1;
         }
         
         .modal {
