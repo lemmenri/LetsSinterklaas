@@ -45,6 +45,7 @@ export const Ronde3 = () => {
 
     return (
         <>
+            {randomPhrase === '' && (<p className="w-full mb-4 p-2 text-lg">Druk op de knop om een opdracht te krijgen!</p>)}
             <p className="w-full mb-4 p-2 text-lg">{randomPhrase}</p>
             <button
                 onClick={generateRandomPhrase}

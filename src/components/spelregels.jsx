@@ -7,6 +7,12 @@ export const Spelregels = () => {
                 SPELREGELS
             </h1>
             <p>Welkom bij het grote Letsconnect Sinterklaas spel! Verzamel je gezelligste collega&apos;s, neem allemaal wat cadeautjes mee, vraag of Wilbert nog wat snacks klaarzet en... lees deze spelregels om te weten wat je moet doen!</p>
+            <ul className='list-disc ml-5'>
+                <li>
+                    Opdrachten die beginnen met een 🕔 moeten binnen de tijd worden uitgevoerd. Vraag een andere speler om de tijd voor je bij te houden (gebruik hiervoor de Timer knop).
+                </li>
+
+            </ul>
             <h2 className='font-semibold'>
                 Ronde 1: De SinterShuffle
             </h2>
@@ -45,9 +51,6 @@ export const Spelregels = () => {
                     De spelers drukken om de beurt met de klok mee op de knop &quot;Ronde 2&quot; en voeren de opdracht uit.
                 </li>
                 <li>
-                    Opdrachten die beginnen met een 🕔 moeten binnen de tijd worden uitgevoerd. Vraag een andere speler om de tijd voor je bij te houden (gebruik hiervoor de Timer knop)
-                </li>
-                <li>
                     De ronde eindigt wanneer de timer afloopt of wanneer alle cadeautjes zijn uitgepakt.
                 </li>
             </ul>
@@ -64,9 +67,6 @@ export const Spelregels = () => {
                 </li>
                 <li>
                     De spelers drukken om de beurt met de klok mee op de knop &quot;Ronde 3&quot; en voeren de opdracht uit.
-                </li>
-                <li>
-                    Opdrachten die beginnen met een 🕔 moeten binnen de tijd worden uitgevoerd. Vraag een andere speler om de tijd voor je bij te houden (gebruik hiervoor de Timer knop)
                 </li>
                 <li>
                     Als een cadeau geclaimed is doet deze niet meer mee voor het spel. Dit cadeau is echt van jou nu! Is het nog ingepakt? Dan mag je het nu uitpakken.
