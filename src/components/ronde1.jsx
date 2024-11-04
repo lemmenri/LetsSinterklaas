@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export const Ronde1 = () => {
     const phrases = [
@@ -31,10 +31,31 @@ export const Ronde1 = () => {
     ];
 
     const [randomPhrase, setRandomPhrase] = useState('');
+    const [lastRandomPhrases, setLastRandomPhrases] = useState([]);
+    const nrOfLastRandomPhrasesToStore = 3
 
     const generateRandomPhrase = () => {
-        const randomIndex = Math.floor(Math.random() * phrases.length);
+        let randomIndex
+
+        let foundNewIndex = false
+        let nrOfTries = 0
+        const maxNrOfTries = 1000
+
+        while (!foundNewIndex && nrOfTries < maxNrOfTries) {
+            randomIndex = Math.floor(Math.random() * phrases.length);
+            if (lastRandomPhrases.includes(phrases[randomIndex])) {
+            } else {
+                foundNewIndex = true
+            }
+            nrOfTries++;
+        }
+
         setRandomPhrase(phrases[randomIndex]);
+        if (lastRandomPhrases.length >= nrOfLastRandomPhrasesToStore) {
+            setLastRandomPhrases([...lastRandomPhrases.slice(1), phrases[randomIndex]])
+        } else {
+            setLastRandomPhrases([...lastRandomPhrases, phrases[randomIndex]])
+        }
     };
 
     return (
