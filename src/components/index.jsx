@@ -5,9 +5,15 @@ import { Timer } from '../components/timer'
 import { Ronde1 } from '../components/ronde1'
 import { Ronde2 } from '../components/ronde2'
 import { Ronde3 } from '../components/ronde3'
+import Image from 'next/image'
 
 const IndexPage = () => {
   const [showModal, setShowModal] = useState(null);
+
+  const imageStyle = {
+    borderRadius: '50%',
+    border: '1px solid #fff',
+  }
 
   const buttons = [
     { id: 1, label: 'Spelregels', position: 'top' },
@@ -27,12 +33,21 @@ const IndexPage = () => {
 
   return (
     <div className='h-screen p-4'>
-      <div className='text-3xl my-4'>LetsSinterklaas</div>
+      <div className='flex space-x-4 pb-4'>
+        <Image
+          src="/logo.png"
+          width={68}
+          height={68}
+          alt="Foto van Wilbert"
+          style={imageStyle}
+        />
+        <div className='text-3xl my-4'>LetsSinterklaas</div>
+      </div>
       <div className="container">
         {buttons.map((button) => (
           <button
             key={button.id}
-            className={`button ${button.position} rounded-lg`}
+            className={`button ${button.position} rounded-3xl`}
             onClick={() => handleButtonClick(button.id)}
           >
             {button.label}

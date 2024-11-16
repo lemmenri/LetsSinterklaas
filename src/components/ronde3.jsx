@@ -28,11 +28,15 @@ export const Ronde3 = () => {
         '🕔 - Noem binnen de tijd 3 liedjes met "snoepgoed" erin. Gelukt binnen de tijd? Claim een cadeautje.',
         '🕔 - De eerste speler links van je moet 5 lekkernijen noemen die tijdens sinterklaas gegeten worden. Gelukt binnen de tijd? Hij of zij krijgt een cadeautje van je. Claim een cadeautje.',
         '🕔 - Doe iemand die meespeelt na. De speler links van je moet raden wie je na doet. Gelukt binnen de tijd? Claim beiden een cadeautje.',
+        '🕔 - Zing een Sinterklaasliedje naar keuze (kies een andere als er al 1 gezongen is). Claim een cadeautje na het zingen.',
         '🕔 - Waar of niet: vertel of verzin de grootste pech die je ooit is overkomen. De volgende speler mag binnen de tijd raden of het waar is of niet. Als hij of zij het fout heeft claim jij een cadeautje. Als het goed is mag hij of zij dit doen.',
         '🕔 - Ga zo snel mogelijk op je handen staan. Gelukt binnen de tijd? Claim een cadeautje.',
-        '🕔 - Druk jezelf tien keer op. Gelukt binnen de tijd? Claim een cadeautje.',
+        '🕔 - Wat is het leukste sinterklaascadeautje wat je zelf ooit gehad hebt? Claim een cadeautje.',
+        '🕔 - Druk jezelf tien keer op of doe een dansje gedurende de tijdslimiet. Gelukt binnen de tijd? Claim een cadeautje.',
         '🕔 - De speler rechts van je moet 10 voorwerpen opnoemen die op de stoomboot liggen. Gelukt binnen de tijd? Claim beiden een cadeautje.',
         '🕔 - Beeld een sinterklaasliedje uit zonder te praten of te zingen. Geraden binnen de tijd? Jij en de persoon die het geraden heeft claimen beiden een cadeautje.',
+        '🕔 - Beschrijf de volgende 4 woorden (à la 30 seconds) en laat ze binnen de tijd raden.\nGelukt? Claim een cadeautje \n\n-Surprise \n-Chocoladeletter \n-Lootjes trekken \n-De intocht van Sinterklaas',
+        '🕔 - Beschrijf de volgende 4 woorden (à la 30 seconds) en laat ze binnen de tijd raden.\nGelukt? Geef een cadeautje aan de persoon links van je \n\n-Grote Boek \n-Dak \n-Hoofdpiet \n-Het SinterklaasJournaal',
         // Add more phrases as needed
     ];
 
@@ -67,7 +71,7 @@ export const Ronde3 = () => {
     return (
         <>
             {randomPhrase === '' && (<p className="w-full mb-4 p-2 text-lg">Druk op de knop om een opdracht te krijgen!</p>)}
-            <p className="w-full mb-4 p-2 text-lg">{randomPhrase}</p>
+            <p className="w-full mb-4 p-2 text-lg whitespace-pre-line">{randomPhrase}</p>
             <button
                 onClick={generateRandomPhrase}
                 className="border-green-800 text-green-800 border-2 font-semibold mt-4 px-6 py-2 rounded-2xl w-full"

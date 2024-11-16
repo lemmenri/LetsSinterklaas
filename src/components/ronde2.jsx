@@ -8,8 +8,9 @@ export const Ronde2 = () => {
         'Pak een cadeau van speler met de meeste cadeaus.',
         'De speler(s) met de minste cadeaus mag/mogen een cadeau uitpakken.',
         'Pak een cadeau af van een ander.',
+        'Iedereen pakt 1 cadeautje uit.',
         'Geef een cadeau aan de speler met de minste cadeaus.',
-        'Jij en een speler pakken elk één cadeautje uit.',
+        'Jij en een speler naar keuze pakken elk één cadeautje uit.',
         'De speler met de meeste cadeautjes geeft een cadeau aan jou.',
         'Pak een cadeau van een andere speler. Die speler mag een cadeautje uitpakken.',
         'Probeer binnen de tijd een cadeautje uit te pakken achter je rug. Gelukt binnen de tijd? Pak dan een cadeautje van een andere speler.',
@@ -28,11 +29,15 @@ export const Ronde2 = () => {
         '🕔 - Noem binnen de tijd 3 liedjes met "snoepgoed" erin. Gelukt binnen de tijd? Pak een cadeautje uit.',
         '🕔 - De eerste speler links van je moet 5 lekkernijen noemen die tijdens sinterklaas gegeten worden. Gelukt binnen de tijd? Hij of zij krijgt een cadeautje van je. Pak een cadeautje uit.',
         '🕔 - Doe iemand die meespeelt na. De speler links van je moet raden wie je na doet. Gelukt binnen de tijd? Pak beiden een cadeautje uit.',
+        '🕔 - Zing een Sinterklaasliedje naar keuze (kies een andere als er al 1 gezongen is). Pak een cadeautje uit na het zingen.',
         '🕔 - Waar of niet: vertel of verzin de grootste pech die je ooit is overkomen. De volgende speler mag binnen de tijd raden of het waar is of niet. Als hij of zij het fout heeft pak jij een cadeautje uit. Als het goed is mag hij of zij dit doen.',
         '🕔 - Ga zo snel mogelijk op je handen staan. Gelukt binnen de tijd? Pak een cadeautje uit.',
-        '🕔 - Druk jezelf tien keer op. Gelukt binnen de tijd? Pak een cadeautje uit.',
+        '🕔 - Druk jezelf tien keer op of doe een dansje gedurende de tijdslimiet. Gelukt binnen de tijd? Pak een cadeautje uit.',
+        '🕔 - Noem 2 andere landen dan Nederland waar ook Sinterklaas gevierd wordt samen met de persoon links van je (antw. Zie mail) \nZijn de antwoorden goed? Pak beide een cadeautje uit',
         '🕔 - De speler rechts van je moet 10 voorwerpen opnoemen die op de stoomboot liggen. Gelukt binnen de tijd? Pak beiden een cadeautje uit.',
         '🕔 - Beeld een sinterklaasliedje uit zonder te praten of te zingen. Geraden binnen de tijd? Jij en de persoon die het geraden heeft Pak beiden een cadeautje uit.',
+        '🕔 - Beschrijf de volgende 4 woorden (à la 30 seconds) en laat ze binnen de tijd raden.\nGelukt? Iedereen pakt een cadeautje uit \n\n-Wegwijspiet \n-Het Pietenhuis \n-Schoencadeautje \n-Zie ginds komt de stoomboot',
+        '🕔 - Beschrijf de volgende 4 woorden (à la 30 seconds) en laat ze binnen de tijd raden.\nGelukt? Pak 1 uitgepakt cadeautje af van iemand \n\n-OzoSnel \n-Schoorsteen \n-Jute zak \n-Hoor de wind waait door de bomen',
         // Add more phrases as needed
     ];
 
@@ -67,7 +72,7 @@ export const Ronde2 = () => {
     return (
         <>
             {randomPhrase === '' && (<p className="w-full mb-4 p-2 text-lg">Druk op de knop om een opdracht te krijgen!</p>)}
-            <p className="w-full mb-4 p-2 text-lg">{randomPhrase}</p>
+            <p className="w-full mb-4 p-2 text-lg whitespace-pre-line">{randomPhrase}</p>
             <button
                 onClick={generateRandomPhrase}
                 className="border-green-800 text-green-800 border-2 font-semibold mt-4 px-6 py-2 rounded-2xl w-full"
