@@ -9,6 +9,7 @@ export const Ronde2 = () => {
         'De speler(s) met de minste cadeaus mag/mogen een cadeau uitpakken.',
         'Pak een cadeau af van een ander.',
         'Iedereen pakt 1 cadeautje uit.',
+        'Geef de speler 2 plaatsen naar rechts een cadeau.',
         'Geef een cadeau aan de speler met de minste cadeaus.',
         'Jij en een speler naar keuze pakken elk één cadeautje uit.',
         'De speler met de meeste cadeautjes geeft een cadeau aan jou.',
@@ -38,6 +39,7 @@ export const Ronde2 = () => {
         '🕔 - Beeld een sinterklaasliedje uit zonder te praten of te zingen. Geraden binnen de tijd? Jij en de persoon die het geraden heeft Pak beiden een cadeautje uit.',
         '🕔 - Beschrijf de volgende 4 woorden (à la 30 seconds) en laat ze binnen de tijd raden.\nGelukt? Iedereen pakt een cadeautje uit \n\n-Wegwijspiet \n-Het Pietenhuis \n-Schoencadeautje \n-Zie ginds komt de stoomboot',
         '🕔 - Beschrijf de volgende 4 woorden (à la 30 seconds) en laat ze binnen de tijd raden.\nGelukt? Pak 1 uitgepakt cadeautje af van iemand \n\n-OzoSnel \n-Schoorsteen \n-Jute zak \n-Hoor de wind waait door de bomen',
+
         // Add more phrases as needed
     ];
 
